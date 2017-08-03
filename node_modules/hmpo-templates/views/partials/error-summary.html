@@ -1,0 +1,10 @@
+{{#errorlist.length}}
+<div class="error-summary" tabindex="-1" aria-labelledby="error-summary-header" role="group">
+    <h2 id="error-summary-header" class="error-summary-heading">There’s a problem</h2>
+    <ul class="error-summary-list">
+    {{#errorlist}}
+        <li><a href="#{{key}}-group">{{ message }}</a></li>
+    {{/errorlist}}
+    </ul>
+</div>
+{{/errorlist.length}}
