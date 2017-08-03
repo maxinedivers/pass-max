@@ -1,0 +1,224 @@
+{
+    "buttons": {
+        "next": "Continue"
+    },
+    "fields": {
+        "country": {
+            "label": "Country"
+        },
+        "application-country": {
+            "label": "Country"
+        },
+        "age": {
+            "label": "Your age"
+        },
+        "age-day":{
+          "label": "Day"
+        },
+        "age-month":{
+          "label": "Month"
+        },
+        "age-year":{
+          "label": "Year"
+        },
+        "expiry-month":{
+          "label": "Month"
+        },
+        "expiry-year":{
+          "label": "Year"
+        },
+        "issue-year":{
+          "label": "Year"
+        },
+        "issue-month":{
+          "label": "Month"
+        },
+        "name":{
+          "label": "First and middle names"
+        },
+        "lastname":{
+          "label": "Last name"
+        },
+        "town-of-birth": {
+            "label": "Town of birth",
+            "hint": "As written on your old passport"
+        },
+        "country-of-birth": {
+            "label": "Country of birth"
+        },
+        "born-in-uk": {
+            "legend": "Were you born in the UK?"
+        },
+        "address1":{
+          "label": "Address"
+        },
+        "town":{
+          "label": "Town or city"
+        },
+        "postcode":{
+          "label": "Postcode"
+        },
+        "email":{
+          "label": "Email"
+        },
+        "country-code":{
+          "value": "Country code"
+        },
+        "country-code":{
+          "value": "Country code"
+        },
+        "mobile":{
+          "label": "Mobile or home phone"
+        },
+        "mobile-overseas":{
+          "label": "Mobile or home phone"
+        },
+        "passport-options":{
+          "label": "Passport size"
+        },
+        "typeahead": {
+          "label": "Country"
+        },
+        "no-sign-reason": {
+          "label": "Explain why you can’t sign your passport"
+        },
+        "previous-name": {
+            "legend": "Have you ever been known by any other names?",
+            "hint": "For example, a maiden name, names from previous marriages or a different name at birth."
+        },
+        "previous-names": {
+            "label": "All of your previous names"
+        },
+        "braille": {
+            "label": "I need a braille sticker."
+        },
+        "title": {
+            "label": "your title"
+        },
+        "companyName": {
+            "label": "Company name"
+        },
+        "pex-reference": {
+            "legend": "Does your application reference begin with PEX?",
+            "hint": "For example PEX 123 456 7890"
+        },
+        "reference-no":{
+            "label": "Reference",
+            "hint": "You’ll find this in your confirmation email, eg PEX 123 456 7890"
+        },
+        "dual-national-country":{
+          "label": "Which country is it for?"
+        },
+        "photo-url":{
+          "label": "Link"
+        },
+        "photo-code":{
+          "label": "Code"
+        },
+        "passport-number":{
+            "label": "Passport Number"
+        },
+        "verification-method": {
+            "legend": "Your verification option",
+            "label": "Your verification option"
+        },
+        "national-insurance": {
+            "label": "National insurance number"
+        },
+        "person-check": {
+            "legend": "Do you know this person",
+            "label": "whether you know this person"
+        },
+        "reasons": {
+            "legend": "Why did you reject the countersignature",
+            "label": "reason for rejecting the countersignature"
+        },
+        "applicant-check": {
+            "legend": "Is this Adrian Smith?",
+            "label": "Is this Adrian Smith?"
+        },
+        "applicant-check-friend": {
+          "label": "Do you know Adrian as a friend, neighbour or colleague?"
+        },
+        "applicant-check-address": {
+          "label": "Are you related to, in a relationship with or living at the same address as Adrian?"
+        },
+        "knowntime": {
+          "label": "How many years have you known Adrian?"
+        },
+        "profession": {
+          "label": "Profession"
+        },
+        "employer": {
+          "label": "Employer's name"
+        },
+        "address-postcode": {
+          "label": "Postcode"
+        },
+        "phone-number": {
+          "label": "Mobile or home phone number"
+        },
+        "email-address": {
+          "label": "Email"
+        }
+    },
+    "validation": {
+        "required": "Please enter {{label}}.",
+        "numeric": "{{label}} must only contain numbers.",
+        "default": "You must answer this question."
+    },
+    "error": {
+        "default": "An unknown error occured",
+        "session": "Session timeout"
+    },
+    "validation": {
+        "required": "Please enter {{label}}.",
+        "numeric": "{{label}} must only contain numbers.",
+        "default": "You must answer this question.",
+        "continue": {
+          "required": "Please tell us if you'd like to continue."
+        },
+        "country": {
+          "required": "You must answer this question - country"
+        },
+        "apply-uk": {
+          "required": "Please tell us if you're applying from the UK"
+        },
+        "application-country": {
+          "required": "You must answer this question"
+        },
+        "british-citizen": {
+          "required": "You must answer this question - british citizen"
+        },
+        "issuing-authority": {
+          "required": "You must answer this question - issuing-authority"
+        },
+        "what-to-do": {
+          "required": "You must answer this question - what to do"
+        },
+        "uncancelled": {
+          "required": "You must answer this question - uncancelled"
+        },
+        "passport-number": {
+          "required": "You must answer this question - passport number"
+        },
+        "town-birth": {
+          "required": "You must answer this question - town birth"
+        },
+        "email": {
+          "required": "Enter your email address."
+        },
+        "mobile": {
+          "required": "Enter your mobile or home phone number."
+        },
+        "passport-options": {
+          "required": "You must answer this question."
+        },
+        "return-passport": {
+          "required": "You must answer this question."
+        },
+        "email": "You must enter a valid email",
+        "exactlength": "{{label}} must be 9 characters",
+        "ninoformat": "{{label}} format incorrect"
+    }
+}
