@@ -9,7 +9,7 @@ module.exports = {
     },
     options: [
       {value: 'First', label: 'Apply for a first British passport'},
-      {value: 'Change', label: 'Make a change to a current British passport (including a change of name)'},
+      {value: 'Change', label: 'Make a change to a current British passport (eg change of name)'},
       {value: 'Renew', label: 'Renew a British passport'},
       {value: 'Replace', label: 'Replace a lost or stolen British passport'}
     ],
@@ -29,7 +29,7 @@ module.exports = {
     },
     options: [
       {value: 'First', label: 'Apply for a first British passport'},
-      {value: 'Change', label: 'Make a change to a current British passport (including a change of name)'},
+      {value: 'Change', label: 'Make a change to a current British passport (eg change of name)'},
       {value: 'Renew', label: 'Renew a British passport'},
       {value: 'Replace', label: 'Replace a lost or stolen British passport'}
     ],

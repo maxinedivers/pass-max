@@ -29,6 +29,6 @@ module.exports = {
       next: '/photo-retrieved'
     },
     '/error': {
-        backLink: './get-photo-code',
+        backLink: './intro/get-photo-code',
     }
 };
