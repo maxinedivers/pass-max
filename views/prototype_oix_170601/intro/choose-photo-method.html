@@ -1,27 +1,56 @@
 {{< layout}}
 
-{{$pageTitle}}Upload your photo{{/pageTitle}}
+{{$pageTitle}}Get a digital photo{{/pageTitle}}
 
 {{$header}}
-    <h1>Choose your digital photo method</h1>
+    <h1>Get a digital photo</h1>
 {{/header}}
 
-{{$content}}
+<!-- content changes made to you-need-a-photo.html -->
+{{$main-content}}
+<div class="grid-row" style="margin:15px;">
+<h1>Get a digital photo</h1>
+
     {{< hmpo-partials-form}}
     {{$form}}
-        <div class="grid-row">
+    <div class="grid-row">
 
             <div class="column-one-third">
               <!-- nothing here but keep it -->
             </div>
+            <div class="column-full">
+                <a href="../photoguide-short" class="guide-box">
+                        <img src="../../public/images/photo-guide-myself.png" alt="Your uploaded photo" title="Your uploaded photo" style="width:25.2%">
+                        <h3 style="margin-top:0;">How to take a digital photo</h3>
+                        <p>A step-by-step guide to taking a good passport photo. You'll need a friend to help you.</p>
+                </a>
+                <a href="../photoguide-shop" class="guide-box last">
+                        <img src="../../public/images/photo-guide-shop.png" alt="Your uploaded photo" title="Your uploaded photo" width="200">
+                        <h3 style="margin-top:0;">If you go to a shop or booth</h3>
+                        <p>Check what to ask for at a photo shop and what you'll get from a booth.</p>
+                </a>
+      </div>
 </div>
       <br/>
 
       <div class="grid-row">
-          <div class="column-one-thirds" >
+          <div class="column-two-thirds" >
+            <h2>If you have a digital photo</h2>
             <div id="choose-photo-group" class="form-group{{#errors.choose-photo}} error{{/errors.choose-photo}}">
                 <fieldset role="radiogroup" aria-required="upload">
-                  
+                  <!--
+                    <legend>
+                        <span class="form-label"></span>
+                        {{#errors.choose-photo}}<span id="{{key}}-error" class="error-message">{{errors.choose-photo.message}}</span>{{/errors.choose-photo}}
+                    </legend>
+                    <label class="block-label" for="choose-photo-myself">
+                        <input type="radio" name="choose-photo" id="choose-photo-myself" value="myself" aria-required="upload"{{#selected}}choose-photo=myself{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
+                        I’ll take a digital photo &ndash; show me how
+                    </label>
+                    <label class="block-label" for="choose-photo-shop">
+                        <input type="radio" name="choose-photo" id="choose-photo-shop" value="shop" aria-required="upload"{{#selected}}choose-photo=shop{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
+                        I’ll get one from a shop &ndash; tell me what to ask for
+                    </label>-->
                    <label class="block-label" for="choose-photo-code">
                         <input type="radio" name="choose-photo" id="choose-photo-code" value="code" aria-required="upload"{{#selected}}choose-photo=code{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
                         I've been to a shop or a booth and I have a code
@@ -37,40 +66,9 @@
             {{#input-submit}}{{/input-submit}}
       </div>
       </div>
-
-    {{/form}}
+        {{/form}}
     {{/ hmpo-partials-form}}
-
-
-
-{{/content}}
-<br/><br/>
-{{$sidebar}}
-<div class="column-one-third">
-  <br/><br/>
-    <div class="sidebar related" style="border:none">
-      <div class="photo-preview-inner">
-
-          <a href="../photoguide-short" class="guide-box" style="margin:0 0 20px 0; width:100%">
-                        <img src="../../public/images/photo-guide-myself.png" alt="Your uploaded photo" title="Your uploaded photo" width="200">
-                        <h3 style="margin-top:0;">How to take a digital photo</h3>
-                        <p>A step-by-step guide to taking a good passport photo. You'll need a friend to help you.</p>
-                </a>
-                <a href="../photoguide-shop" class="guide-box last" style="margin:0 0 20px 0; width:100%">
-                        <img src="../../public/images/photo-guide-shop.png" alt="Your uploaded photo" title="Your uploaded photo" width="200">
-                        <h3 style="margin-top:0;">If you go to a shop or booth</h3>
-                        <p>Check what to ask for at a photo shop and what you'll get from a booth.</p>
-                </a>
-           <!--
-           <p>Or, in an email from a shop</p>
-           <div class="photo">
-               <img src="../../public/images/email-photo-code.png" alt="Your uploaded photo" title="Your uploaded photo" width="300">
-           </div>
-         -->
-      </div>
-
-    </div>
 </div>
-{{/sidebar}}
+{{/main-content}}
 
 {{/ layout}}
