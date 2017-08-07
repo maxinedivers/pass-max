@@ -3,7 +3,7 @@ module.exports = {
       fields: ['apply-uk', 'application-country'],
       controller: require('../../../controllers/go-overseas'),
       backLink: '/../prototype_oix_170601/startpage',
-      next: '/intro', /* if Yes is selected */
+      next: '/../intro', /* if Yes is selected */
       nextAlt: 'what-do-you-want-to-do-overseas', /* if they are from Germany/France */
       nextAltAlt:'what-do-you-want-to-do-overseas',/* if they are from Afganistan */
       nextAltAltAlt:'what-do-you-want-to-do-overseas', /* if they are from Spain - first hidden as renewal */
