@@ -11,7 +11,7 @@ module.exports = {
         backLink: './uploading'
     },
     '/photo-uploaded-success': {
-        backLink: './'
+        backLink: './intro/get-photo-code'
     },
     '/plain-expression': {
         fields: ['plain-expression'],

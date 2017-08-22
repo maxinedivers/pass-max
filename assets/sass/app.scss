@@ -1313,3 +1313,9 @@ padding: 10px;
   margin-bottom: 30px;
   padding: 20px 15px 15px;
 }
+
+.alert-success {
+  border-color: $turquoise;
+  background-color: mix(white, $turquoise, 90%);
+}
+   
