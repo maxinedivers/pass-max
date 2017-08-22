@@ -3,7 +3,7 @@ var Base = require('hmpo-form-wizard').Controller;
 var _ = require('lodash');
 
 var validUrls = [
-    { 'url': '2pNfHiz' }
+    { 'url': '1' }
 ];
 
 var Controller = function () {
