@@ -1,6 +1,6 @@
 module.exports = {
   '/': {
-      backLink: '../intro/choose-photo-method-overseas',
-      next: '../uploadphoto'
+      backLink: '../intro/choose-photo-method',
+      next: './photo-uploaded-failure'
   }
 };

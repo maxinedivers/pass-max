@@ -1,4 +1,27 @@
 module.exports = {
+    'override': {
+      legend: {
+        value: 'Do you want to use this photo?',
+        className: 'visuallyhidden'
+      },
+      options: [
+        {value: 'Yes', label: 'Yes'},
+        {value: 'No', label: 'No'}
+      ],
+      validate: [
+        'required',
+        {
+          type:'equal',
+          arguments:['No','No'],
+          redirect:'./upload'
+        },
+        {
+          type:'equal',
+          arguments:['No','Yes'],
+          redirect:'/photo/question-expression'
+        }
+      ]
+    },
     'plain-expression': {
       legend: {
         value: 'Do you have a plain expression?',
