@@ -90,7 +90,7 @@ function init(sessionStore) {
 
 
 
-                //prototype OIX 170601
+//prototype OIX 170601
                     app.use('/prototype_oix_170601/uploadphoto', require('./routes/prototype_oix_170601/uploadphoto'));
                     app.use('/prototype_oix_170601/filter-common', require('./routes/prototype_oix_170601/filter-common'));
                     app.use('/prototype_oix_170601/renew', require('./routes/prototype_oix_170601/renew'));
@@ -117,7 +117,7 @@ function init(sessionStore) {
                     app.use('/prototype_oix_170601/filter-common-oix', require('./routes/prototype_oix_170601/filter-common-oix'));
 
 
-  //prototype OIX 170821
+//prototype OIX 170821
                     app.use('/prototype_oix_170821/uploadphoto', require('./routes/prototype_oix_170821/uploadphoto'));
                     app.use('/prototype_oix_170821/filter-common', require('./routes/prototype_oix_170821/filter-common'));
                     app.use('/prototype_oix_170821/renew', require('./routes/prototype_oix_170821/renew'));
@@ -143,6 +143,33 @@ function init(sessionStore) {
                     app.use('/prototype_oix_170821/filter-oix', require('./routes/prototype_oix_170821/filter-oix'));
                     app.use('/prototype_oix_170821/filter-common-oix', require('./routes/prototype_oix_170821/filter-common-oix'));
 
+//prototype OIX 170906
+                    app.use('/prototype_oix_170906/uploadphoto', require('./routes/prototype_oix_170906/uploadphoto'));
+                    app.use('/prototype_oix_170906/filter-common', require('./routes/prototype_oix_170906/filter-common'));
+                    app.use('/prototype_oix_170906/renew', require('./routes/prototype_oix_170906/renew'));
+                    app.use('/prototype_oix_170906/intro', require('./routes/prototype_oix_170906/intro'));
+                    app.use('/prototype_oix_170906/filter', require('./routes/prototype_oix_170906/filter'));
+                    app.use('/prototype_oix_170906/startpage', require('./routes/prototype_oix_170906/startpage'));
+                    app.use('/prototype_oix_170906/photoguide-short', require('./routes/prototype_oix_170906/photoguide-short'));
+                    app.use('/prototype_oix_170906/photoguide-static', require('./routes/prototype_oix_170906/photoguide-static'));
+                    app.use('/prototype_oix_170906/photoguide-shop', require('./routes/prototype_oix_170906/photoguide-shop'));
+                    app.use('/prototype_oix_170906/takephoto', require('./routes/prototype_oix_170906/takephoto'));
+                    app.use('/prototype_oix_170906/upload', require('./routes/prototype_oix_170906/upload'));
+                    app.use('/prototype_oix_170906/rejectedphoto', require('./routes/prototype_oix_170906/rejectedphoto'));
+                    app.use('/prototype_oix_170906/throttle', require('./routes/prototype_oix_170906/throttle'));
+                    app.use('/prototype_oix_170906/payment', require('./routes/prototype_oix_170906/payment'));
+                    app.use('/prototype_oix_170906/submission-failed', require('./routes/prototype_oix_170906/submission-failed'));
+                    app.use('/prototype_oix_170906/sar', require('./routes/prototype_oix_170906/sar'));
+                    app.use('/prototype_oix_170906/photo-url', require('./routes/prototype_oix_170906/photo-url'));
+                    app.use('/prototype_oix_170906/photo-code', require('./routes/prototype_oix_170906/photo-code'));
+                    app.use('/prototype_oix_170906/oix', require('./routes/prototype_oix_170906/oix'));
+                    app.use('/prototype_oix_170906/intro-oix', require('./routes/prototype_oix_170906/intro-oix'));
+                    app.use('/prototype_oix_170906/photo-retrieved', require('./routes/prototype_oix_170906/photo-retrieved'));
+                    app.use('/prototype_oix_170906/startpage-oix', require('./routes/prototype_oix_170906/startpage-oix'));
+                    app.use('/prototype_oix_170906/filter-oix', require('./routes/prototype_oix_170906/filter-oix'));
+                    app.use('/prototype_oix_170906/filter-common-oix', require('./routes/prototype_oix_170906/filter-common-oix'));
+
+app.use('/override', require('./routes/override'));
 
 
 

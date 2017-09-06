@@ -1,0 +1,84 @@
+{{< layout}}
+
+{{$pageTitle}}How to{{/pageTitle}}
+
+{{$propositionHeader}}{{/propositionHeader}}
+
+{{$header}}
+    <h1>How to</h1>
+{{/header}}
+
+{{$main-content}}
+        <div class="phase-banner">
+            <p>
+                <strong class="phase-tag">BETA</strong>
+                <span>This is a new service – your <a href="/help/feedback" target="_blank">feedback<span class="visuallyhidden">(Opens in a new window)</span></a> will help us to improve it.</span>
+            </p>
+        </div>
+                <div id="back">
+            <a href="/photo/photo-already-tried" class="back-link">Back</a>
+</div>
+                <div class="grid-row">
+                <div class="column-two-thirds">
+        <header>
+        <h1>You need another photo</h1>    </header>
+        <div class="photo-preview">
+        <div class="photo-preview-inner">
+            <h2 class="heading-medium">Your photo</h2>
+            <div class="photo">
+                <img src="/photo/thumbnail" alt="Your uploaded photo" title="Your uploaded photo">
+            </div>
+        </div>
+    </div>
+    <form action="/photo/not-accepted" method="POST" autocomplete="off" novalidate="true" spellcheck="false">
+            <p>This photo has failed our automated checks for the following reasons:</p>
+            <ul>
+                    <li>
+                        <div class="panel panel-photo-result panel-photo-error">
+                            <h2 class="bold-medium">It looks like your mouth is open</h2>
+                            <p>Sometimes this is caused by facial hair or shadows near your mouth. Please try different lighting.</p>
+                            <p>You can still submit your photo if you believe it should be accepted (eg there’s a medical reason why your mouth appears to be open).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="panel panel-photo-result panel-photo-error">
+                            <h2 class="bold-medium">We can’t find the outline of your head</h2>
+                            <p>Our automated checks can’t find the outline of your head.</p>
+                            <p>Please try:</p>
+                            <ul class="list list-bullet">
+                                <li>standing in front of a plain, light-coloured (eg, cream or grey) background</li>
+                                <li>tying your hair back or brushing it down if it’s loose</li>
+                                <li>standing further away from the wall to avoid shadows</li>
+                                <li>to make sure the background has no glare or patterns</li>
+                            </ul>
+                        </div>
+                    </li>
+            </ul>
+                            <details role="group">
+                    <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">Can I use this photo?</span></summary>
+                    <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+                        <p>You can only use this photo if you:</p>
+                        <ul class="list list-bullet">
+                            <li>have a medical or religious reason why it doesn’t meet the rules</li>
+                            <li>think that the reason it failed is not correct</li>
+                        </ul>
+                        <p>Your application will be delayed if we have to ask you for a different photo.</p>
+                        <div class="form-group">
+                            <input type="submit" value="I understand – use this photo" class="button-secondary">
+                        </div>
+                    </div>
+                </details>
+            <div class="form-group">
+                <a href="/photo/upload" class="button" role="button">Try another photo</a>
+            </div>
+            <p>Find out <a href="/photo/need-photo">how to get another photo</a>.</p>
+
+<input type="hidden" name="x-csrf-token" value="MvPMRUwi-rMyxMuMLlU7F75RRu2qZO099niY">
+</form>
+</div>
+            </div>
+    
+
+{{/main-content}}
+
+{{/ layout}}
