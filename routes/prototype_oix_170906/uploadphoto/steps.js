@@ -35,6 +35,6 @@ module.exports = {
         next: './'
     },
     '/check-photo-and-submit': {
-        backLink: './shadows-face'
+        backLink: './photo-uploaded-success'
     }
 };
