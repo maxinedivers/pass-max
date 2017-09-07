@@ -7,7 +7,7 @@
 {{/header}}
 
 {{$content}}
-
+<form action="/" method="POST" autocomplete="off" novalidate="true" spellcheck="false">
         <p>Your photo has passed the automated checks. We still need to check it manually and may ask you for another photo if something isn’t right.</p>
 
         <!-- discuss removing some or all of this content -->
@@ -47,7 +47,57 @@
                 </p>
             </div>
 
-            <a href="../renew/old-pass-details" class="button">Submit photo</a><br/><br/>
+        <!--    <a href="../renew/old-pass-details" class="button">Submit photo</a><br/><br/>-->
+
+        <!-- RADIO TOGGLE OPTIONS-->
+
+
+  <div class="form-group" style="margin-top:50px">
+    <fieldset>
+
+      <legend>
+        <h2 class="heading-medium" style="padding-bottom:15px">
+          
+Are you sure you want to submit this photo?
+        </h2>
+
+      </legend>
+
+      <div class="block-label" data-target="contact-by-email">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-email">No, I’ll provide a different photo</label>
+      </div>
+      
+
+
+      <div class="block-label" data-target="contact-by-phone">
+        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes" aria-controls="override" aria-expanded="false">
+        <label for="example-contact-by-phone">Yes, I want to submit it</label>
+      </div>
+     
+      <div class="panel panel-border-narrow js-hidden" id="override" aria-hidden="true">
+        <label class="form-label" for="contact-phone">
+        <h2>Your photo failed these checks</h2>
+                        <ul class="list list-bullet">
+                            <li>We can’t find the outline of your head</li>
+                        </ul>
+                        <p>Explain why you’d like to use this photo</p>
+                        <textarea name="overridden-reason" id="overridden-reason" class="form-control textarea" aria-required="true" maxlength="250" spellcheck="true" autocapitalize="sentences"></textarea>
+                        </label>
+      </div>
+
+
+    </fieldset>
+  </div>
+</form>
+
+<div class="form-group">
+                <a href="../uploadphoto/check-photo-and-submit" class="button" role="button">Continue</a>
+            </div>
+
+            <p>Find out <a href="../intro/choose-photo-method">how to get another photo</a>.</p>
+
+<!-- END OF TOGGLE -->
 
             <div class="panel panel-border-wide">
                 <p>
