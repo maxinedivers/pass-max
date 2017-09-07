@@ -16,6 +16,9 @@ module.exports = {
     '/photo-uploaded-failure': {
         backLink: '../upload'
     },
+    '/photo-code-failure': {
+        backLink: '../intro/get-photo-code'
+    },
     '/plain-expression': {
         fields: ['plain-expression'],
         backLink: './photo-uploaded-failure',
@@ -27,7 +30,7 @@ module.exports = {
         next: '/you-need-another-photo'
     },
     '/expression-need-another-photo': {
-        backLink: './plain-expression',
+        backLink: './',
         next: './'
     },
     '/you-need-another-photo': {
@@ -35,6 +38,6 @@ module.exports = {
         next: './'
     },
     '/check-photo-and-submit': {
-        backLink: './photo-uploaded-success'
+        backLink: './shadows-face'
     }
 };

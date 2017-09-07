@@ -5,15 +5,15 @@ module.exports = {
         className: 'visuallyhidden'
       },
       options: [
-        {value: 'Yes', label: 'Yes'},
-        {value: 'No', label: 'No'}
+        {value: 'Yes', label: 'Yes, I do'},
+        {value: 'No', label: 'No, I dont'}
       ],
       validate: [
         'required',
         {
           type:'equal',
           arguments:['No','No'],
-          redirect:'./upload'
+          redirect:'/intro/choose-photo-method'
         },
         {
           type:'equal',
@@ -22,6 +22,7 @@ module.exports = {
         }
       ]
     },
+
     'plain-expression': {
       legend: {
         value: 'Do you have a plain expression?',
