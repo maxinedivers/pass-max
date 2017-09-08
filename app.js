@@ -42,7 +42,7 @@ auth
             authorizer: authoriser,
             challenge: true
         }));
-    }*/
+    }
 
     // session
     app.use(require('cookie-parser')());
