@@ -1,6 +1,6 @@
 # passports-prototype
 
-Passport journeys
+Maxine's HMPO Prototypes
 
 # Setup
 
@@ -18,7 +18,7 @@ When Redis is running on localhost:6379 (standard settings) your session data wo
 
 # View the prototype online
 
-<a href="http://passports-prototype.herokuapp.com/" target="_blank">http://passports-prototype.herokuapp.com/</a>
+<a href="http://http://pass-max.herokuapp.com//" target="_blank">http://http://pass-max.herokuapp.com/.com/</a>
 
 It may take a few seconds to load.
 
