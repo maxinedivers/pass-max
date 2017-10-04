@@ -8,10 +8,9 @@
 
 {{$content}}
 <form action="/" method="POST" autocomplete="off" novalidate="true" spellcheck="false">
-        <p>Your photo has passed the automated checks. We still need to check it manually and may ask you for another photo if something isn’t right.</p>
+        <p>Your photo must meet all the requirements in the following 3 categories:</p>
 
         <!-- discuss removing some or all of this content -->
-        <p>Check your photo meets all the requirements in the following 3 categories:</p>
         <ol class="list-number">
                 <li class="list-item-bold">Your appearance
                     <p>Make sure:</p>
@@ -48,12 +47,27 @@
             </div>-->
 
         <!--    <a href="../renew/old-pass-details" class="button">Submit photo</a><br/><br/>-->
+        <br/>
 
- <div class="panel panel-border-wide">
-                <p>
-                  We will compare your new photo with your old one. If you can’t be recognised we’ll ask you to get someone to confirm your identity.
+ <div class="panel panel-border-wide" style="border-color: #B10E1E;background-color: rgba(223, 48, 52, 0.3);">
+                <p class="list-item-bold">
+                  Our automated check suggests that: </p>
+                  <p>
+                  <ul class="list-bullet">
+                    <li>your photo is blurred </li>
+                    <li>your mouth is open</li>
+                </ul>
                 </p>
             </div>
+
+ <p>
+    This is only the first check and your photo may still meet the rules. You can still use the photo if: </p> 
+<ul class="list-bullet">
+    <li>you think it meets all the requirements</li>
+    <li>you can’t meet the rules because of a religious or medical reason</li>
+</ul>
+
+<p>If you decide to use this photo we’ll check it manually. We’ll ask for another photo if something doesn’t look right. </p>
         <!-- RADIO TOGGLE OPTIONS-->
 
 
@@ -63,14 +77,14 @@
       <legend>
         <h2 class="heading-medium" style="padding-bottom:15px">
           
-Are you sure you want to submit this photo?
+Would you like to submit this photo?
         </h2>
 
       </legend>
 
       <div class="block-label" data-target="contact-by-email">
         <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
-        <label for="example-contact-by-email">No, I’ll provide a different photo</label>
+        <label for="example-contact-by-email">No, I want to find out how to get another photo</label>
       </div>
       
 
@@ -82,11 +96,7 @@ Are you sure you want to submit this photo?
      
       <div class="panel panel-border-narrow js-hidden" id="override" aria-hidden="true">
         <label class="form-label" for="contact-phone">
-        <h2>Your photo failed these checks</h2>
-                        <ul class="list list-bullet">
-                            <li>We can’t find the outline of your head</li>
-                        </ul>
-                        <p>Explain why you’d like to use this photo</p>
+        <p>Tell us why you’d like to use this photo</p>
                         <textarea name="overridden-reason" id="overridden-reason" class="form-control textarea" aria-required="true" maxlength="250" spellcheck="true" autocapitalize="sentences"></textarea>
                         </label>
       </div>
