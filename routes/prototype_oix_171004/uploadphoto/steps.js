@@ -37,7 +37,13 @@ module.exports = {
         backLink: './shadows-face',
         next: './'
     },
+    '/happy-check-photo-and-submit': {
+        backLink: '../intro/get-photo-code'
+    },
+    '/error-check-photo-and-submit': {
+        backLink: '../intro/get-photo-code'
+    },
     '/check-photo-and-submit': {
-        backLink: './shadows-face'
+        backLink: '../intro/get-photo-code'
     }
 };
