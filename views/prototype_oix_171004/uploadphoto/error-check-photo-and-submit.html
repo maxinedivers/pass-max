@@ -7,15 +7,23 @@
 {{/header}}
 
 {{$content}}
-<p> Our automated check shows 
+<p> This photo has failed our automated checks for the following reasons: 
 
-<ul class="list-bullet">
-  <li>Sorry, we can’t crop this photo</li>
-<li>It looks like your photo is black and white</li>
-</ul>
+ <div class="panel panel-photo-result panel-photo-error">
+                            <h2 class="bold-medium">Sorry, we can’t crop this photo</h2>
+                            <p>We’re having problems uploading your photo. Please try again or upload another one.</p>
+                        </div>
+        
+
+
+                        <div class="panel panel-photo-result panel-photo-error">
+                            <h2 class="bold-medium">It looks like you’re not facing the camera</h2>
+                            <p>If you tilt your head it may appear you’re not facing the camera.</p>
+                            <p>You can still submit your photo if you believe it should be accepted (eg there’s a medical reason why you can’t face the camera).</p>
+                        </div>
 
 <div class="form-group">
-                <a href="../photo/upload" class="button" role="button">Choose another photo</a>
+                <a href="../intro/choose-photo-method" class="button" role="button">Get another photo</a>
             </div>
 
   
@@ -26,23 +34,5 @@
 
 
 {{/content}}
-
-<!--{{$sidebar}}
-<div class="column-one-third" style="margin-top:50px">
-    <div class="sidebar related">
-      <div class="photo-preview-inner">
-          <h2 class="heading-medium">Your photo</h2>
-          <div class="photo">
-            <object type="image/jpg" data="/public/images/thumbnail.jpeg"type="image/svg+xml" tabindex="-1" style="width:150px">
-            <img src="/public/images/woman-with-reddish-hair_ex@2x.jpg" alt="Head nad shoulder image of a woman with reddish hair standing in front of a grey background with neutral expression.">
-            </object>
-            <p style="font-size:16px; font-weight:bold; color:grey">abc.de/2pNfHiz</p>
-           
-        </div>
-      </div>
-
-    </div>
-</div>
-{{/sidebar}}-->
 
 {{/ layout}}

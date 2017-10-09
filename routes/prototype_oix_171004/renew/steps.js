@@ -1,6 +1,6 @@
 module.exports = {
     '/':{
-        backLink: '../uploadphoto/check-photo-and-submit',
+        backLink: '../intro/get-photo-code',
         next: '/old-pass-details'
     },
     '/old-pass-details': {
