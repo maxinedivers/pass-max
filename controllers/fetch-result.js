@@ -9,7 +9,7 @@ var Controller = function () {
 util.inherits(Controller, Base);
 
 Controller.prototype.get = function successHandler(req, res, callback) {
-    let url = req.sessionModel.get('photo-code-photo');
+    var url = req.sessionModel.get('photo-code-photo');
 
     if (url.startsWith('1')) return res.redirect('../uploadphoto/happy-check-photo-and-submit');
     if (url.startsWith('2')) return res.redirect('../uploadphoto/check-photo-and-submit');

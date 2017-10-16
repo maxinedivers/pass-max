@@ -1,4 +1,33 @@
 module.exports = {
+    'oix-override': {
+      legend: {
+        value: 'Do you want to use this photo?',
+        className: 'visuallyhidden'
+      },
+      options: [
+        {value: 'Yes'},
+        {value: 'No'}
+      ],
+      validate: [
+        'required',
+        {
+          type: 'equal',
+          arguments: ['Yes'],
+          redirect: '/../intro/get-photo-code'
+        }
+      ]
+    },
+    'oix-override-reason': {
+      legend: {
+        value: 'Do you want to use this photo?',
+        className: 'visuallyhidden'
+      },
+      dependent: {
+        field: 'oix-override',
+        value: 'Yes'
+      },
+      validate: 'required'
+    },
     'override': {
       legend: {
         value: 'Do you want to use this photo?',
