@@ -162,11 +162,7 @@
           "label": "Email"
         }
     },
-    "validation": {
-        "required": "Please enter {{label}}.",
-        "numeric": "{{label}} must only contain numbers.",
-        "default": "You must answer this question."
-    },
+  
     "error": {
         "default": "An unknown error occured",
         "session": "Session timeout"
@@ -185,6 +181,12 @@
           "required": "Please tell us if you're applying from the UK"
         },
         "application-country": {
+          "required": "You must answer this question"
+        },
+        "oix-override": {
+          "required": "You must answer this question"
+        },
+        "oix-override-reason": {
           "required": "You must answer this question"
         },
         "british-citizen": {

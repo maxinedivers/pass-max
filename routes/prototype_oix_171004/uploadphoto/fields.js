@@ -13,7 +13,7 @@ module.exports = {
         {
           type: 'equal',
           arguments: ['Yes'],
-          redirect: '/../intro/get-photo-code'
+          redirect: '/../intro/choose-photo-method'
         }
       ]
     },
