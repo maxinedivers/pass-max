@@ -44,6 +44,8 @@ module.exports = {
         backLink: '../intro/get-photo-code'
     },
     '/check-photo-and-submit': {
-        backLink: '../intro/get-photo-code'
+        fields: ['oix-override', 'oix-override-reason'],
+        backLink: '../intro/get-photo-code',
+        next: '/../renew/old-pass-details'
     }
 };
