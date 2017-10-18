@@ -1,6 +1,6 @@
 module.exports = {
     '/': {
-        backLink: '/../prototype_oix_171004/filter/uncancelled',
+        backLink: '../filter-common',
         next: '/what-you-need'
     },
     '/what-you-need': {
