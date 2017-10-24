@@ -9,7 +9,7 @@
 {{$content}}
     {{<hmpo-partials-form}}
     {{$form}}
-        <p>Your photo must meet all the requirements in the following 3 categories:</p>
+        <p>Your photo must meet all of these rules.</p>
 
         <!-- discuss removing some or all of this content -->
         <ol class="list-number">
@@ -101,7 +101,7 @@
         <div class="form-group {{#errors.oix-override}} error{{/errors.oix-override}}">
           <label class="form-label" for="oix-override-reason">
             <!--<p>If we have to ask for a different photo your application may be delayed.</p>-->
-            <p>Tell us why you’d like to use this photo</p>
+            <p>Tell us why you’d like to use this photo:</p>
             {{#errors.oix-override-reason}}<span id="oix-override-reason-error" class="error-message">{{errors.oix-override-reason.message}}</span>{{/errors.oix-override-reason}}
             <textarea
               name="oix-override-reason"
@@ -124,7 +124,7 @@
           aria-required="true"
           {{#selected}}oix-override=No{{/selected}}>
         <label for="oix-override-no">
-          No, I want to find out how to get another photo
+          No, I want to get another photo
         </label>
       </div>
 
