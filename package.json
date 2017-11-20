@@ -13,6 +13,9 @@
     "watch:js": "watch 'npm run js' ./assets/javascripts",
     "watch:sass": "watch 'npm run sass' ./assets/sass"
   },
+  "engines": {
+    "npm": "5.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UKHomeOffice/passports-prototype.git"
