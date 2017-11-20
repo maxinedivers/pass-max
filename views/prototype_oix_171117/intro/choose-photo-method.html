@@ -43,12 +43,16 @@
                         <input type="radio" name="choose-photo" id="choose-photo-upload" value="upload" aria-required="upload"{{#selected}}choose-photo=upload{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
                         I have a digital photo to upload
                     </label>
+
+
                     <div style="clear:both"></div>
                     <label class="block-label" for="choose-photo-code">
-                        <input type="radio" name="choose-photo" id="choose-photo-code" value="code" aria-required="upload"{{#selected}}choose-photo=code{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
+                        <input type="radio" name="choose-photo" id="choose-photo-code" value="code" aria-controls="choose-photo-toggle" aria-expanded="true" aria-required="upload"{{#selected}}choose-photo=code{{/selected}}{{#errors.choose-photo}} aria-describedby="{{key}}-error" aria-invalid="upload"{{/errors.choose-photo}}>
                         I have a code to enter
                     </label>
                     
+
+                    <div class="panel panel-border-narrow js-hidden" id="choose-photo-toggle">The photo code is a new service and may not be available yet from photo booths or shops in your area.</div>
                     
                 </fieldset>
             </div>
