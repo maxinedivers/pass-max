@@ -1,4 +1,4 @@
-var util = require('util');
+'use strict';
 
 var Model = require('hmpo-model'),
     config = require('../config/default.json'),
@@ -6,23 +6,22 @@ var Model = require('hmpo-model'),
 
 var veteranEndDate = moment(config.veteranEndDate);
 
-var Costs = function (attrs, options) {
-    var self = this;
-    Model.call(this, attrs, options);
-    Object.defineProperty(this.attributes, 'cost', {
-        enumerable: true,
-        get: Costs.prototype.getCost.bind(self)
-    });
-    Object.defineProperty(this.attributes, 'veteran', {
-        enumerable: true,
-        get: function () {
-            var dob = moment(this.get('date-of-birth'), 'YYYY-MM-DD');
-            return dob.isBefore(veteranEndDate);
-        }.bind(this)
-    });
-};
-
-util.inherits(Costs, Model);
+class Costs extends Model {
+    constructor(attrs, options) {
+        super(attrs, options);
+        Object.defineProperty(this.attributes, 'cost', {
+            enumerable: true,
+            get: Costs.prototype.getCost.bind(this)
+        });
+        Object.defineProperty(this.attributes, 'veteran', {
+            enumerable: true,
+            get: () => {
+                var dob = moment(this.get('date-of-birth'), 'YYYY-MM-DD');
+                return dob.isBefore(veteranEndDate);
+            }
+        });
+    }
+}
 
 Costs.prototype.getCost = function () {
     var cost = 0;
